@@ -1,1 +1,2 @@
+rootProject.name = "TitanNew"
 include ':app'

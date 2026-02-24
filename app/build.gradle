@@ -12,6 +12,9 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
+
+def groqApiKey = project.findProperty("GROQ_API_KEY") ?: ""
+buildConfigField "String", "GROQ_API_KEY", "\"${groqApiKey}\""
     }
 
     buildTypes {
